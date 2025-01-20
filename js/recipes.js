@@ -1,7 +1,7 @@
 export const recipes = 
 [
 {name: "Adobo",
-  image: "/assest/adobo.jpg",
+  image: "/assets/images/adobo.jpg",
  instructions: 
  [
   "In a bowl, marinate the meat with soy sauce, garlic, and peppercorns for 30 minutes.",
@@ -25,7 +25,7 @@ export const recipes =
 },
 
 {name: "Sinigang Na Baboy",
-  image: "/assest/Sinigang na Baboy.jpg",
+  image: "/assets/images/Sinigang na Baboy.jpg",
   instructions: 
   [
    "Boil pork in water with onion and tomatoes until tender.",
@@ -48,7 +48,7 @@ export const recipes =
   ] 
  },
 {name: "Kare-Kare",
-  image: "/assest/Kare-Kare.jpg",
+  image: "/assets/images/Kare-Kare.jpg",
   instructions: 
   [
    "Boil the meat until tender, set aside.",
@@ -72,7 +72,7 @@ export const recipes =
   ] 
  },
  {name: "Lechon Kawali",
-  image: "/assest/Lechon Kawali.jpg",
+  image: "/assets/images/Lechon Kawali.jpg",
   instructions: 
   [
    "Boil pork belly in water with salt, peppercorns, and bay leaves until tender.",
@@ -94,7 +94,7 @@ export const recipes =
  },
  {
   name: "Pancit Canton",
-  image: "/assest/Pancit Canton.jpg",
+  image: "/assets/images/Pancit Canton.jpg",
   instructions: [
     "Sauté garlic and onion, then cook the chicken or pork.",
     "Add chicken stock, soy sauce, and oyster sauce. Bring to a boil.",
@@ -114,7 +114,7 @@ export const recipes =
 },
 {
   name: "Bulalo",
-  image: "/assest/Bulalo.jpg",
+  image: "/assets/images/Bulalo.jpg",
   instructions: [
     "Boil beef shank in water with onion until tender (around 1.5–2 hours).",
     "Add corn and simmer for 10 minutes.",
@@ -133,7 +133,7 @@ export const recipes =
 },
 {
   name: "Tinola",
-  image: "/assest/Tinola.jpg",
+  image: "/assets/images/Tinola.jpg",
   instructions: [
     "Sauté ginger and onion, then add chicken.",
     "Pour water and simmer until chicken is tender.",
@@ -152,7 +152,7 @@ export const recipes =
 },
 {
   name: "Bicol Express",
-  image: "/assest/Bicol Express.jpg",
+  image: "/assets/images/Bicol Express.jpg",
   instructions: [
     "Sauté garlic, then add pork and cook until lightly browned.",
     "Stir in shrimp paste and coconut milk, simmering for 15 minutes.",
@@ -170,7 +170,7 @@ export const recipes =
 },
 {
   name: "Lumpiang Shanghai",
-  image: "/assest/Lumpiang Shanghai.jpg",
+  image: "/assets/images/Lumpiang Shanghai.jpg",
   instructions: [
     "Mix pork, carrot, onion, garlic, egg, and breadcrumbs.",
     "Wrap 1 tbsp of mixture in a lumpia wrapper, sealing the edges.",
@@ -190,7 +190,7 @@ export const recipes =
 },
 {
   name: "Halo-Halo",
-  image: "/assest/Halo-Halo.jpg",
+  image: "/assets/images/Halo-Halo.jpg",
   instructions: [
     "Layer sweetened banana, beans, nata de coco, and other ingredients in a tall glass.",
     "Add crushed ice on top.",

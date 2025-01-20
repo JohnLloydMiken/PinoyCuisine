@@ -7,6 +7,9 @@ const instructionDiv = document.getElementById('instructionDiv');
 const ingredientDiv = document.getElementById('ingredientDiv');
 const recipeName = document.querySelector(".recipeName");
 const recipeImage = document.getElementById("recipeImage");
+const profileSection = document.getElementById('profileSection');
+const profileBtn = document.getElementById('profileBtn');
+const profilePicture = document.getElementById('profilePicture');
 btnSearch.addEventListener('click', function(){
    
     verifyInput(inputRecipe.value);
@@ -14,6 +17,19 @@ btnSearch.addEventListener('click', function(){
    
    
 });
+
+profileBtn.addEventListener("click", function(){
+  
+
+  if(profileSection.style.display === 'none'){
+    profileSection.style.display = 'block';
+    profileSection.style.position ="fixed";
+ 
+  }else{
+    profileSection.style.display = 'none';
+  }
+});
+
 
 function verifyInput(inputRecipe){
 

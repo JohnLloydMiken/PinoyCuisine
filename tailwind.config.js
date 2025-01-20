@@ -16,7 +16,8 @@ module.exports = {
       'secondary': '#FFF2E2',
       'backgroundColor': '#FFFBF7',
       'headerBg': '#FFF0DC',
-      'inputBg': '#6B8A7A'
+      'inputBg': '#6B8A7A',
+      'profileSection': '#6B8A7A',
       
     },
     fontFamily: {
