@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="bg-backgroundColor font-gatile box-border w-screen h-full  flex justify-center items-center flex-col pt-20">
+
+    <header class=" w-full h-16 fixed  flex justify-center top-0 z-50 bg-backgroundColor backdrop-blur-2xl " >
+        <nav class="flex justify-between w-11/12 items-center  pl-4 pr-4">
+            <h1 class="text-4xl flex:none font-bold">PinoyCuisine.</h1>
+            <ul class="flex  items-center  w-3/5 justify-evenly relative right-32 font-semibold ">
+                <li><a href="" class="">About</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">Recipes</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">FAQ</a></li>
+                
+            </ul>
+       
+        </nav>
+
+    </header>
+
+    <div class="w-full h-screen flex justify-center items-start  ">
+       <div class="w-11/12 h-90 flex justify-center items-start  bg-hero-Bg bg-center bg-no-repeat bg-cover rounded-md">
+        <h1 class="w-1/4 text-7xl absolute top-1/2 left-16 bg-backgroundColor rounded-l-none rounded-r-3xl p-4 font-semibold text-center"><span class="block">Try Filipino</span>  Cuisine</h1>
+       </div>
+
+    </div>
+
+    <div>
+        <div>
+            <input type="text" placeholder="Enter Your Dish Here" id="recipeInput" class="w-1/5 bg-btnColor rounded-2xl text-black  tracking-wider font-light outline-none p-1 placeholder-black placeholder-opacity-55 text-center ">
+            <button id="btnSearch">Search</button>
+        </div>
+    </div>
+
+    <div class="w-full h-screen flex flex-col justify-start items-center ">
+        <div class="w-11/12 h-1/2  rounded-lg">
+            <img src="/assest/adobo.jpg" alt="Adobo Image" id="recipeImage" class=" w-full h-full rounded-lg ">
+            <h1 class="recipeName relative bottom-64 w-3/12 bg-backgroundColor text-7xl font-semibold text-left p-0.5 rounded-l-none rounded-r-lg">Adobo Recipe</h1>
+        </div>
+        <div class="grid w-11/12 h-1/2  grid-cols-2">
+
+            <div class=" w-full h-90  self-center" id="instructionDiv">
+                <h2 class=" font-bold text-4xl font-serif">Instructions</h2>
+
+             <ol id="instructionCont" class="list-decimal relative left-12  text-2xl leading-10">
+                <li> In a bowl, marinate the meat with soy sauce, garlic, and peppercorns for 30 minutes.</li>
+                <li>Heat oil in a pan, then fry the meat until lightly browned.</li>
+                <li>Add the marinade, vinegar, bay leaves, and water to the pan.</li>
+                <li>Simmer for 30-40 minutes until the meat is tender.</li>
+                <li>Adjust the flavor with sugar, if desired. Serve with steamed rice.</li>
+             </ol>
+            </div>
+
+            <div id="ingredientDiv" class="w-full h-90 relative bg-secondary rounded-lg self-center">
+                <h2 class="font-bold text-4xl font-serif relative left-4 top-1">Indredients</h2>
+                <ul id="ingredientCont" class="text-2xl relative left-14 leading-10 list-disc">
+                    <li>1 kg chicken</li>
+                    <li>1/2 cup soy sauce</li>
+                    <li>1/2 cup vinegar</li>
+                    <li>6 garlic cloves, minced</li>
+                    <li>1 tsp black peppercorns</li>
+                    <li>3 bay leaves</li>
+                    <li>1 tbsp cooking oil</li>
+                    <li>1 cup water</li>
+                    <li>1 tsp sugar (optional)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js" type="module" defer ></script>
+</body>
+</html>
