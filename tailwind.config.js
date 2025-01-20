@@ -23,7 +23,7 @@ module.exports = {
       gatile: ['Gatile']
     },
     backgroundImage: {
-      'hero-Bg': "url('/assest/landingBG.jpg')",
+      'hero-Bg': "url('/assets/images/landingBG.jpg')",
       
     },
     textColor:{

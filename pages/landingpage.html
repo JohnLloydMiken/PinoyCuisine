@@ -9,23 +9,26 @@
 
 <body class="bg-backgroundColor font-gatile box-border w-screen h-full  flex justify-center items-center flex-col pt-20">
 
-    <header class=" w-full h-16 fixed  flex justify-center top-0 z-50 bg-backgroundColor backdrop-blur-2xl " >
+    <header class=" w-full h-16 fixed  flex justify-center items-center top-0  bg-backgroundColor backdrop-blur-2xl " >
         <nav class="flex justify-between w-11/12 items-center  pl-4 pr-4">
             <h1 class="text-4xl flex:none font-bold">PinoyCuisine.</h1>
-            <ul class="flex  items-center  w-3/5 justify-evenly relative right-32 font-semibold ">
-                <li><a href="" class="">About</a></li>
+            <ul class="flex  items-center  w-3/5 justify-evenly relative right-32 font-semibold tracking-wider font-sans">
+                <li><a href="#aboutSection" class="">About</a></li>
                 <li><a href="">Reviews</a></li>
-                <li><a href="">Recipes</a></li>
+                <li><a href="#RecipeSection">Recipes</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="">FAQ</a></li>
                 
             </ul>
-       
+            <button class="w-max h-max relative left-4 top-1"><svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D39738"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg></button>
         </nav>
-
+        
     </header>
 
-    <div class="w-full h-screen flex justify-center items-start  ">
+    <div class="w-1/5 h-screen absolute bg-secondary right-0 -top-0 z-">
+
+    </div>
+
+    <div class="w-full h-screen flex justify-center items-start" id="aboutSection">
        <div class="w-11/12 h-90 flex justify-center items-start  bg-hero-Bg bg-center bg-no-repeat bg-cover rounded-md">
         <h1 class="w-1/4 text-7xl absolute top-1/2 left-16 bg-backgroundColor rounded-l-none rounded-r-3xl p-4 font-semibold text-center"><span class="block">Try Filipino</span>  Cuisine</h1>
        </div>
@@ -39,9 +42,9 @@
         </div>
     </div>
 
-    <div class="w-full h-screen flex flex-col justify-start items-center ">
+    <div class="w-full h-screen flex flex-col justify-start items-center " id="RecipeSection">
         <div class="w-11/12 h-1/2  rounded-lg">
-            <img src="/assest/adobo.jpg" alt="Adobo Image" id="recipeImage" class=" w-full h-full rounded-lg ">
+            <img src="/assets/images/adobo.jpg" alt="Adobo Image" id="recipeImage" class=" w-full h-full rounded-lg ">
             <h1 class="recipeName relative bottom-64 w-3/12 bg-backgroundColor text-7xl font-semibold text-left p-0.5 rounded-l-none rounded-r-lg">Adobo Recipe</h1>
         </div>
         <div class="grid w-11/12 h-1/2  grid-cols-2">
