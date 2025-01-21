@@ -28,11 +28,13 @@ module.exports = {
       
     },
     textColor:{
-      "darkColor": "#3B3030"
+      "darkColor": "#3B3030",
+      'beige': '#FFF2E2',
     },
     fontSize:{
       '3rem': '2.5rem'
     },
+    
   },
   },
   plugins: [],
