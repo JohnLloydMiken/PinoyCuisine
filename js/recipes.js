@@ -94,7 +94,7 @@ export const recipes =
  },
  {
   name: "Pancit Canton",
-  image: "/assets/images/Pancit Canton.jpg",
+  image: "/assets/images/Pancit Canton (Stir-Fried Noodles).jpg",
   instructions: [
     "Sauté garlic and onion, then cook the chicken or pork.",
     "Add chicken stock, soy sauce, and oyster sauce. Bring to a boil.",
