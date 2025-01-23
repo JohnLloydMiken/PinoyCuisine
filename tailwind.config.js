@@ -5,10 +5,14 @@ module.exports = {
     extend: {  
       height: {
       '90': '90%', // Custom height value
-      '500px': '500px'
+      '500px': '500px',
+      'divHeight': '909px'
     },
     width:{
-         '600px': '500px'
+         '600px': '500px',
+         '48%':'48%',
+         '90': '90%', // Custom height value
+         'divWidth': '1750px'
     },
     backgroundColor: {
       'fontColor': '#2D2B2B',
@@ -18,10 +22,13 @@ module.exports = {
       'headerBg': '#FFF0DC',
       'inputBg': '#6B8A7A',
       'profileSection': '#6B8A7A',
+      'lightBg': '#FFF3E0',
+      'darkBg': '#3B3030',
+      
       
     },
     fontFamily: {
-      gatile: ['Gatile']
+      gatile: ['Gatile', 'sans']
     },
     backgroundImage: {
       'hero-Bg': "url('/assets/images/landingBG.jpg')",
@@ -61,7 +68,7 @@ module.exports = {
       }
     },
     animation:{
-      slide: 'slide 24s cubic-bezier(0.25, 0.1, 0.25, 1) infinite',
+      slide: 'slide 32s cubic-bezier(0.25, 0.1, 0.25, 1) infinite',
     }
     
   },

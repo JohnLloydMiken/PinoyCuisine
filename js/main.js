@@ -10,6 +10,17 @@ const recipeImage = document.getElementById("recipeImage");
 const profileSection = document.getElementById('profileSection');
 const profileBtn = document.getElementById('profileBtn');
 const profilePicture = document.getElementById('profilePicture');
+
+
+inputRecipe.addEventListener('input', function(){
+let input = inputRecipe.value
+  recipes.forEach((recipe) =>{
+    if(recipe.recipeName.starts){
+  
+    }
+  })
+
+});
 btnSearch.addEventListener('click', function(){
    
     verifyInput(inputRecipe.value);
@@ -29,6 +40,7 @@ profileBtn.addEventListener("click", function(){
     profileSection.style.display = 'none';
   }
 });
+
 
 
 function verifyInput(inputRecipe){
