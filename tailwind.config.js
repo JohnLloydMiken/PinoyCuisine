@@ -69,6 +69,9 @@ module.exports = {
     },
     animation:{
       slide: 'slide 32s cubic-bezier(0.25, 0.1, 0.25, 1) infinite',
+    },
+    boxShadow:{
+      'reviews': '10px 8px 1px #D39738'
     }
     
   },
