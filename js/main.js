@@ -8,21 +8,60 @@ const ingredientDiv = document.getElementById('ingredientDiv');
 const recipeName = document.querySelector(".recipeName");
 const recipeImage = document.getElementById("recipeImage");
 const profileSection = document.getElementById('profileSection');
+const RecipeDetailSection = document.getElementById('RecipeDetailSection');
 const profileBtn = document.getElementById('profileBtn');
-const profilePicture = document.getElementById('profilePicture');
+const leftBtn = document.getElementById('leftBtn');
+const rightBtn = document.getElementById('rightBtn');
+const searchValues = document.getElementById('searchValues');
+const review1 = document.getElementById('review1');
+const review2 = document.getElementById('review2');
 
 
-inputRecipe.addEventListener('input', function(){
-let input = inputRecipe.value
-  recipes.forEach((recipe) =>{
-    if(recipe.recipeName.starts){
-  
-    }
-  })
+
+
+leftBtn.addEventListener('click', function(){ 
+alert("left clicked");
+review1.style.transform = "translateX(-100%)";
+review2.style.transform = "translateX(-100%)";
 
 });
+
+rightBtn.addEventListener('click', function(){ 
+  alert("right clicked");
+  review1.style.transform = "translateX(0)";
+review2.style.transform = "translateX(0)";
+  });
+
+inputRecipe.addEventListener('input', function(){
+
+let input = inputRecipe.value
+
+searchValues.innerHTML='';
+
+if(input.length > 0){
+  const recipesArray = recipes.sort((a, b) => a.name.localeCompare(b.name));
+  const filteredRecipes = recipesArray.filter((recipe) => recipe.name.includes(input));
+  
+  if(filteredRecipes.length > 0) {
+      filteredRecipes.forEach((recipe) => {
+          searchValues.appendChild(displayRecipeList(recipe.name));
+      });
+  } else {
+      const noRecipeFound = document.createElement('p');
+      noRecipeFound.textContent = "No recipe found";
+      noRecipeFound.className = "text-white text-xl"; // Tailwind CSS classes for styling
+      searchValues.appendChild(noRecipeFound);
+  }
+} else {
+  // Handle the case when input is empty, if needed
+}
+
+
+});
+
 btnSearch.addEventListener('click', function(){
-   
+  console.log("clicked");
+
     verifyInput(inputRecipe.value);
     
    
@@ -41,13 +80,25 @@ profileBtn.addEventListener("click", function(){
   }
 });
 
+function displayRecipeList(recipeName){
+      const recipeContianer = document.createElement('ul');
+      recipeContianer.className = "w-11/12  text-left "
+      const recipeList = document.createElement('li');
+      recipeList.textContent = recipeName;
+      recipeList.className = "text-4xl text-beige p-2 m-2 rounded-lg"
+      recipeContianer.appendChild(recipeList)
+   
+     return recipeContianer
 
+}
 
 function verifyInput(inputRecipe){
 
     recipes.forEach((recipe) =>{
     if(inputRecipe === recipe.name){
-
+        console.log("Recipe found:", recipe.name);
+        RecipeDetailSection.classList.add('flex');
+        RecipeDetailSection.classList.remove('hidden');
         recipeName.textContent = `${recipe.name} Recipe`
         getInstruction(recipe);
         getIngredients(recipe);
@@ -82,3 +133,5 @@ function getIngredients(recipe){
 function renderImage(recipe){
   recipeImage.src = recipe;
 }
+
+

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/*.{html,js}"],
+  content: ["./pages/*.{html,js}" , "./js/*.js"],
   theme: {
     extend: {  
       height: {
@@ -24,6 +24,7 @@ module.exports = {
       'profileSection': '#6B8A7A',
       'lightBg': '#FFF3E0',
       'darkBg': '#3B3030',
+      'recipelistBg': '#80552A',
       
       
     },
@@ -65,10 +66,20 @@ module.exports = {
         '90%':{ transform: 'translateX(-800%)' },
         '100%': { transform: 'translateX(-900%)' },
        
-      }
+      },
+      'reviewSlideLeft': {
+        '0%':{ transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-100%)' },
+      },
+      'reviewSlideRight': {
+        '0%':{ transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(100%)' },
+      },
     },
     animation:{
       slide: 'slide 32s cubic-bezier(0.25, 0.1, 0.25, 1) infinite',
+      reviewSlideLeft: 'reviewSlideLeft 2s ease-in-out  ',
+      reviewSlideRight: 'reviewSlideRight 2s ease-in-out  ',
     },
     boxShadow:{
       'reviews': '10px 8px 10px #09122C'

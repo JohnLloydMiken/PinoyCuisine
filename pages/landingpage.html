@@ -14,9 +14,9 @@
             <h1 class="text-4xl flex:none font-bold">PinoyCuisine.</h1>
             <ul class="flex  items-center  w-3/5 justify-evenly relative right-32 font-semibold tracking-wider font-sans">
                 <li><a href="#aboutSection" class="hover:border-b-4 border-green-300">About</a></li>
-                <li><a href="">Reviews</a></li>
+                <li><a href="#reviewSection">Reviews</a></li>
                 <li ><a href="#RecipeSection" class="">Recipes</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
                 
             </ul>
             <button id="profileBtn" class="w-max h-max relative left-4 top-1"><svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D39738"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg></button>
@@ -36,16 +36,22 @@
     </div>
 
 <!--User Profile Ends Here-->
- <!--Hero Starts Here-->
+ <!--Hero Starts Here
+ bg-hero-Bg bg-center bg-no-repeat bg-cover
+ 
+ -->
     <div class="w-full h-screen flex justify-center items-start " id="aboutSection">
-       <div class="w-11/12 h-90 flex justify-center items-start  bg-hero-Bg bg-center bg-no-repeat bg-cover rounded-md">
+       <div class="w-11/12 h-90 flex justify-center items-start   rounded-md">
+        <video autoplay muted loop class="w-full h-full object-cover rounded-md" >
+            <source src="/assets/video/2882115-uhd_3840_2160_24fps.mp4" type="video/mp4">
+        </video>
         <h1 class="w-1/4 text-7xl absolute top-1/2 left-16 bg-backgroundColor rounded-l-none rounded-r-3xl p-4 font-semibold text-center"><span class="block">Try Filipino</span>  Cuisine</h1>
        </div>
     </div>
 <!--Hero Ends Here-->
 
  <!--Recipe Search Starts Here-->
-    <div class="w-full h-screen  grid grid-cols-1 relative -top-20 rounded-md">    
+    <div class="w-full h-screen  grid grid-cols-1 relative -top-20 rounded-md" id="RecipeSection">    
         <div class="w-11/12 h-90 bg-fontColor  justify-self-center text-center rounded-md flex justify-between items-center relative">
            <div class="w-full h-full p-4">
             <h1 class=" text-beige text-7xl relative top-10" >Explore our huge selection of delicious recipe ideas</h1>
@@ -129,6 +135,9 @@
                         <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
                     </svg>
                 </button>
+                <div class="w-11/12 h-2/3 bg-recipelistBg absolute top-60 rounded-lg right-7 flex justify-center items-center  flex-col " id="searchValues">
+
+                </div>
             </div>
         </div>
     </div>
@@ -137,7 +146,7 @@
 
 <!--Review Starts Here-->
 
-    <div class="w-full h-screen flex justify-center items-center relative flex-col -top-36">
+    <div class="w-full h-screen flex justify-center items-center relative flex-col -top-36" id="reviewSection">
         <div class="w-11/12 h-2/5 bg-lightBg rounded-t-md text-center">
             <form class="relative top-10" >
                 <h1 class="text-6xl font-sans">Your Voices Matters To Us.</h1>
@@ -146,15 +155,15 @@
                 <button class="w-48 h-20 bg-inputBg text-2xl text-white rounded-3xl absolute bottom-10 right-4 hover:text-yellow-200">Submit Feedback</button>
             </form>
         </div>
-        <div class="w-11/12 h-2/3 bg-darkBg rounded-b-md flex justify-center items-center flex-col">
+        <div class="w-11/12 h-2/3 bg-darkBg rounded-b-md flex justify-start items-center flex-col">
 
-                <h1>Customer Feedbacks</h1>
+                <h1 class="text-white text-5xl m-10">Customer Feedbacks</h1>
                 <!--Container-->
-                <div class=" w-11/12 h-96 border border-white">
+                <div class=" w-11/12 h-96  overflow-hidden">
                     <!--Slider-->
-                    <div class="w-full h-full ">
+                    <div class="w-full h-full flex">
                         <!--Content Container-->
-                          <div class="w-full h-full  flex justify-around">
+                          <div class="w-full h-full  flex justify-around flex-shrink-0" id="review1">
                             <!--Content -->
                                 <div class="w-96 h-96 bg-secondary relative">
                                     <div class="p-4">
@@ -234,14 +243,14 @@
                         <!-- Content Container Ends Here-->
 
                         <!--Content Container-->
-                        <div class="w-full h-full  flex justify-around">
+                        <div class="w-full h-full  flex justify-around flex-shrink-0" id="review2">
                             <!--Content -->
                                 <div class="w-96 h-96 bg-secondary relative">
                                     <div class="p-4">
                                         <svg width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.62231 6.78278C10.0546 6.43909 10.1265 5.81001 9.78277 5.3777C9.43908 4.94539 8.81001 4.87354 8.37769 5.21724C4.73471 8.11342 4 11.8784 4 16C4 17.6569 5.34315 19 7 19C8.65685 19 10 17.6569 10 16C10 14.3432 8.65685 13 7 13C6.71233 13 6.43412 13.0405 6.17076 13.1161C6.5162 10.5872 7.45738 8.50391 9.62231 6.78278ZM20 16C20 17.6569 18.6569 19 17 19C15.3431 19 14 17.6569 14 16C14 11.8784 14.7347 8.11342 18.3777 5.21724C18.81 4.87354 19.4391 4.94539 19.7828 5.3777C20.1265 5.81001 20.0546 6.43909 19.6223 6.78278C17.4574 8.50391 16.5162 10.5872 16.1708 13.1161C16.4341 13.0405 16.7123 13 17 13C18.6569 13 20 14.3432 20 16Z" fill="#000000"/>
                                             </svg>
-                                            <p class=" text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quam voluptas sunt temporibus quaerat enim nemo impedit architecto repellendus, quae iure dolorum aut beatae modi ratione. Dolore eos non officiis?</p>
+                                            <p class=" text-xl">Miken</p>
                                     </div>
                                     <div class="w-96 h-20 bg-inputBg absolute bottom-0 left-0 flex text-center justify-center items-center">
                                         <div class="">
@@ -265,7 +274,7 @@
                                         <svg width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.62231 6.78278C10.0546 6.43909 10.1265 5.81001 9.78277 5.3777C9.43908 4.94539 8.81001 4.87354 8.37769 5.21724C4.73471 8.11342 4 11.8784 4 16C4 17.6569 5.34315 19 7 19C8.65685 19 10 17.6569 10 16C10 14.3432 8.65685 13 7 13C6.71233 13 6.43412 13.0405 6.17076 13.1161C6.5162 10.5872 7.45738 8.50391 9.62231 6.78278ZM20 16C20 17.6569 18.6569 19 17 19C15.3431 19 14 17.6569 14 16C14 11.8784 14.7347 8.11342 18.3777 5.21724C18.81 4.87354 19.4391 4.94539 19.7828 5.3777C20.1265 5.81001 20.0546 6.43909 19.6223 6.78278C17.4574 8.50391 16.5162 10.5872 16.1708 13.1161C16.4341 13.0405 16.7123 13 17 13C18.6569 13 20 14.3432 20 16Z" fill="#000000"/>
                                             </svg>
-                                            <p class=" text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quam voluptas sunt temporibus quaerat enim nemo impedit architecto repellendus, quae iure dolorum aut beatae modi ratione. Dolore eos non officiis?</p>
+                                            <p class=" text-xl">Maryuuuu</p>
                                     </div>
                                     <div class="w-96 h-20 bg-inputBg absolute bottom-0 left-0 flex text-center justify-center items-center">
                                         <div class="">
@@ -290,7 +299,7 @@
                                         <svg width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.62231 6.78278C10.0546 6.43909 10.1265 5.81001 9.78277 5.3777C9.43908 4.94539 8.81001 4.87354 8.37769 5.21724C4.73471 8.11342 4 11.8784 4 16C4 17.6569 5.34315 19 7 19C8.65685 19 10 17.6569 10 16C10 14.3432 8.65685 13 7 13C6.71233 13 6.43412 13.0405 6.17076 13.1161C6.5162 10.5872 7.45738 8.50391 9.62231 6.78278ZM20 16C20 17.6569 18.6569 19 17 19C15.3431 19 14 17.6569 14 16C14 11.8784 14.7347 8.11342 18.3777 5.21724C18.81 4.87354 19.4391 4.94539 19.7828 5.3777C20.1265 5.81001 20.0546 6.43909 19.6223 6.78278C17.4574 8.50391 16.5162 10.5872 16.1708 13.1161C16.4341 13.0405 16.7123 13 17 13C18.6569 13 20 14.3432 20 16Z" fill="#000000"/>
                                             </svg>
-                                            <p class=" text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quam voluptas sunt temporibus quaerat enim nemo impedit architecto repellendus, quae iure dolorum aut beatae modi ratione. Dolore eos non officiis?</p>
+                                            <p class=" text-xl">anathasia</p>
                                     </div>
                                     <div class="w-96 h-20 bg-inputBg absolute bottom-0 left-0 flex text-center justify-center items-center">
                                         <div class="">
@@ -316,14 +325,39 @@
                     </div>
                 </div>
 
-                
+                <div class="w-1/2 h-20  relative top-4 flex justify-between items-center">
+                    <button id="leftBtn">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        class="w-16 h-16 hover:fill-green-500"
+                        viewBox="0 -960 960 960" 
+                       
+                         fill="#e8eaed">
+                        <path d="m480-320 56-56-64-64h168v-80H472l64-64-56-56-160 160 160 160Zm0 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
+                    </svg>
+                    </button >
+                    <div class="w-32 flex justify-between ">
+                      <div class="w-8 h-8 rounded-full bg-gray-400"></div>
+                      <div class="w-8 h-8 rounded-full bg-white"></div>
+                      <div class="w-8 h-8 rounded-full bg-gray-400"></div>
+                    </div>
+                    <button id ="rightBtn">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        class="w-16 h-16 hover:fill-green-500"
+                        viewBox="0 -960 960 960" 
+                       
+                        fill="#e8eaed">
+                        <path d="m480-320 160-160-160-160-56 56 64 64H320v80h168l-64 64 56 56Zm0 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                    </button>
+                </div>
 
         </div>
     </div>
 <!--Review Ends Here-->
 
 <!--Recipe  Starts Here-->
-    <div class="w-full h-screen flex flex-col justify-start items-center hidden" id="RecipeSection">
+    <div class="w-full h-screen  hidden  flex-col justify-start items-center  " id="RecipeDetailSection">
         <div class="w-11/12 h-1/2  rounded-lg">
             <img src="/assets/images/adobo.jpg" alt="Adobo Image" id="recipeImage" class=" w-full h-full rounded-lg ">
             <h1 class="recipeName relative bottom-64 w-3/12 bg-backgroundColor text-7xl font-semibold text-left p-0.5 rounded-l-none rounded-r-lg">Adobo Recipe</h1>
@@ -359,8 +393,40 @@
         </div>
     </div>
 
-    <footer class="bg-fontColor w-full h-24">
+    <footer class="bg-fontColor w-full h-28" id="contact">
+        <div class="w-11/12 h-full flex justify-between items-center">
 
+            <div class="w-1/2 h-full  flex justify-center items-center">
+                <h1 class="text-4xl text-white">Pinoy Cuisine.</h1>
+            </div>
+
+            <div class="w-1/2 h-full  flex justify-between items-center">
+                <div class="text-white">
+                    <ul>
+                        <li class="text-3xl">Home</li>
+                        <li class="hover:text-amber-500 hover:underline text-sm font-sans cursor-pointer">Reviews</li>
+                        <li class="hover:text-amber-500 hover:underline text-sm font-sans cursor-pointer">Recipes</li>
+                        <li class="hover:text-amber-500 hover:underline text-sm font-sans cursor-pointer">About Us</li>
+                    </ul>
+                </div>
+                <div class="text-white">
+                    <ul>
+                        <li class="text-3xl">Privacy Policy</li>
+                        <li class="hover:text-amber-500 hover:underline text-sm font-sans cursor-pointer">Terms of Service</li>
+                        <li class="hover:text-amber-500 hover:underline text-sm font-sans cursor-pointer">Cookie Policy</li>
+                        <li class="hover:text-amber-500 hover:underline text-sm font-sans cursor-pointer">Disclaimer</li>
+                    </ul>
+                </div>
+                <div class="text-white">
+                    <ul>
+                        <li class="hover:text-amber-500 hover:underline text-sm font-sans cursor-pointer">Facebook</li>
+                        <li class="hover:text-amber-500 hover:underline text-sm font-sans cursor-pointer">Instagram</li>
+                        <li class="hover:text-amber-500 hover:underline text-sm font-sans cursor-pointer">Twitter</li>
+                        <li class="hover:text-amber-500 hover:underline text-sm font-sans cursor-pointer">Youtube</li>
+                    </ul>
+                </div>
+            </div>
+           </div>
     </footer>
 <!--Recipe  Ends Here-->
     <script src="/js/main.js" type="module" defer ></script>
