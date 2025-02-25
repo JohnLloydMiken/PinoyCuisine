@@ -6,13 +6,16 @@ module.exports = {
       height: {
       '90': '90%', // Custom height value
       '500px': '500px',
-      'divHeight': '909px'
+      'divHeight': '909px',
+      'smH': '100px',
     },
     width:{
          '600px': '500px',
          '48%':'48%',
          '90': '90%', // Custom height value
-         'divWidth': '1750px'
+         'divWidth': '1750px',
+          'smW': '100px',
+          '500px': '400px',
     },
     backgroundColor: {
       'fontColor': '#2D2B2B',
@@ -50,7 +53,10 @@ module.exports = {
       'beige': '#FFF2E2',
     },
     fontSize:{
-      '3rem': '2.5rem'
+      '3rem': '2.5rem',
+      '10px': '10px',
+      '8px': '8px',
+
     },
     keyframes:{
       'slide': {

@@ -85,7 +85,7 @@ function displayRecipeList(recipeName){
       recipeContianer.className = "w-11/12  text-left "
       const recipeList = document.createElement('li');
       recipeList.textContent = recipeName;
-      recipeList.className = "text-4xl text-beige p-2 m-2 rounded-lg"
+      recipeList.className = "lg:text-4xl text-beige p-2 lg:m-2 rounded-lg text-sm"
       recipeContianer.appendChild(recipeList)
    
      return recipeContianer
@@ -113,7 +113,7 @@ function verifyInput(inputRecipe){
 function getInstruction(recipe){
   instructionDiv.innerHTML = "";
   const title = document.createElement("h2");
-  title.className = "font-bold text-4xl font-serif"
+  title.className = "font-bold lg:text-4xl  font-serif"
   title.textContent = "Instruction"
   instructionDiv.appendChild(title);
   const intruct = renderInstruction(recipe);
@@ -123,7 +123,7 @@ function getInstruction(recipe){
 function getIngredients(recipe){
   ingredientDiv.innerHTML = "";
   const title = document.createElement("h2");
-  title.className = "font-bold text-4xl font-serif relative left-4 top-1"
+  title.className = "font-bold lg:text-4xl font-serif relative left-4 top-1"
   title.textContent = "Ingredients"
   ingredientDiv.appendChild(title);
   const intruct = renderIngredients(recipe);
